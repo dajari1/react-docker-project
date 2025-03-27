@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('{ "response": "Welcome to my ayeni clement website" }');
+    res.send('{ "response": "Welcome to my dennis ajari website" }');
 });
 
 app.get('/next', function (req, res) {

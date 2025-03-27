@@ -16,7 +16,7 @@ ls -lart
 # Apply force to delete 1st, 2nd, 3rd, 4th
  $ docker images purge
  $ docker images prune
- # powerful ones
+ # To remove or delete all images and containers
  $ docker image prune --all --force
  $ docker rmi -f $(docker images -aq)
 
@@ -30,7 +30,7 @@ ls -lart
 CONTAINER ID   IMAGE       COMMAND              CREATED          STATUS                             PORTS                    NAMES
 bb0b75a1d316   feyiimage   "python ./main.py"   36 seconds ago   Up 35 seconds (health: starting)   0.0.0.0:5004->5004/tcp   exciting_poitras
 
-# To remove unused images and containers
+# To remove unused images and containers (and to remove all images and containers)
  $ docker system prune
 
 # To remove containers
@@ -57,3 +57,5 @@ bb0b75a1d316   feyiimage   "python ./main.py"   36 seconds ago   Up 35 seconds (
  # Command to build images and container to 
  $ docker build -t username/nameing
  
+ # Command to configure an email from Vscode to Github
+ $ git config --global user.email "ajaridennis@gmail.com"
